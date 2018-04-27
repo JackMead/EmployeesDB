@@ -1,0 +1,1 @@
+SELECT CONCAT(FirstName, ' ', LastName) FROM Employees WHERE Age>25
