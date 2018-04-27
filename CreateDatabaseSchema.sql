@@ -24,7 +24,7 @@ CREATE TABLE PensionProviders(
 )
 
 CREATE TABLE PensionFunds(
-	Id int NOT NULL PRIMARY KEY,
+	Id int IDENTITY NOT NULL PRIMARY KEY,
 	Amount int NOT NULL,
 	Provider int NOT NULL,
 	FOREIGN KEY(Provider) REFERENCES PensionProviders(Id)
