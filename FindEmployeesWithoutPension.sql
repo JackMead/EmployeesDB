@@ -1,0 +1,1 @@
+SELECT * FROM Employees e WHERE NOT EXISTS (SELECT * FROM PensionFunds WHERE e.Id=EmployeeId)
